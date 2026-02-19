@@ -516,6 +516,19 @@
     .footer-links a:hover {
       color: #ff1a1a;
     }
+
+.brand-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 38px; /* ajuste se quiser maior ou menor */
+  width: auto;
+  object-fit: contain;
+}
+
   </style>
   <style>@view-transition { navigation: auto; }</style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
@@ -526,10 +539,10 @@
   <div class="app-wrapper h-full">
    <div class="main-container">
     <!-- Header -->
-    <header class="header">
-     <div class="brand-title">
-      <span class="brand-x">X</span>Cofe
-     </div>
+<header class="header">
+  <div class="brand-title">
+    <img src="https://i.ibb.co/S4w5bXrL/Logo.png" alt="XCofe" class="brand-logo">
+  </div>
     </header><!-- Congratulations Section -->
     <div class="congratulations-section">
      <h1 class="congratulations-title">PARABÉNS!</h1>

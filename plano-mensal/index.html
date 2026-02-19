@@ -672,11 +672,6 @@
       const fontFamily = config.font_family || defaultConfig.font_family;
       const fontSize = config.font_size || defaultConfig.font_size;
       
-      // Update brand name
-      const brandTitle = document.querySelector('.brand-title');
-      if (brandTitle) {
-        brandTitle.innerHTML = `<span class="brand-x">${brandName.charAt(0)}</span>${brandName.slice(1)}`;
-      }
       
       // Update price
       const priceEl = document.getElementById('plan-price');

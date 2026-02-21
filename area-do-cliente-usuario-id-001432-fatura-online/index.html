@@ -696,8 +696,8 @@
     <div class="payment-section">
      <h3 class="section-title">Pagamento via Pix</h3>
      <div class="section-divider"></div>
-     <p class="payment-description">Escolha a quantidade de pontos para pagar</p>
-     <div class="select-wrapper"><select class="custom-select" id="points-select"> <option value="" disabled selected>Clique aqui para selecionar</option> <option value="1">1 Ponto - R$30,00</option> <option value="2">2 Pontos - R$50,00</option> <option value="3">3 Pontos - R$75,00</option> <option value="4">4 Pontos - R$100,00</option> <option value="5">5 Pontos - R$125,00</option> <option value="6">6 Pontos - R$150,00</option> </select>
+     <p class="payment-description">Escolha o plano para pagar</p>
+     <div class="select-wrapper"><select class="custom-select" id="points-select"> <option value="" disabled selected>Clique aqui para selecionar</option> <option value="1">Plano mensal - R$34,90</option> <option value="2">Plano Trimestral - R$89,90</option> <option value="3">Plano Semestral - R$179,90</option> <option value="4">Plano Anual - R$299,90</option> </select>
       <div class="select-arrow">
        <svg viewbox="0 0 24 24">
         <path d="M7 10l5 5 5-5z" />
@@ -727,7 +727,7 @@
       <div class="instruction-item"><span class="instruction-number">4</span> <span class="instruction-text">Envie o comprovante no Whatsapp.</span>
       </div>
      </div>
-    </div><!-- WhatsApp Button --> <button class="whatsapp-button" id="whatsapp-btn" onclick="window.open('https://wa.me/5511947034962', '_blank')"> <span class="whatsapp-icon">
+    </div><!-- WhatsApp Button --> <button class="whatsapp-button" id="whatsapp-btn" onclick="window.open('https://wa.me/5511990203834', '_blank')"> <span class="whatsapp-icon">
       <svg viewbox="0 0 24 24">
        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
       </svg></span> <span id="whatsapp-text">Voltar no Whatsapp</span> </button> <!-- Footer -->
@@ -756,12 +756,10 @@
 
     // PIX codes for each option
     const pixCodes = {
-      1: '00020126560014BR.GOV.BCB.PIX0111455067628010219XCofe  Plano mensal520400005303986540530.005802BR5925Gabriel Robert Cardoso do6009SAO PAULO62140510oxsLOQw0xX630420F0',
-      2: '00020126560014BR.GOV.BCB.PIX0111455067628010219XCofe  Plano mensal520400005303986540550.005802BR5925Gabriel Robert Cardoso do6009SAO PAULO62140510ehGLan6sW16304EC66',
-      3: '00020126560014BR.GOV.BCB.PIX0111455067628010219XCofe  Plano mensal520400005303986540575.005802BR5925Gabriel Robert Cardoso do6009SAO PAULO62140510Wto5MEt5Jz6304CF5B',
-      4: '00020126560014BR.GOV.BCB.PIX0111455067628010219XCofe  Plano mensal5204000053039865406100.005802BR5925Gabriel Robert Cardoso do6009SAO PAULO62140510BYB6hkVOLk63046783',
-      5: '00020126560014BR.GOV.BCB.PIX0111455067628010219XCofe  Plano mensal5204000053039865406125.005802BR5925Gabriel Robert Cardoso do6009SAO PAULO62140510soatS0UKn26304DB00',
-      6: '00020126560014BR.GOV.BCB.PIX0111455067628010219XCofe  Plano mensal5204000053039865406150.005802BR5925Gabriel Robert Cardoso do6009SAO PAULO621405107J58dJEkqI6304445D'
+      1: '00020126360014BR.GOV.BCB.PIX0114+5511990203834520400005303986540534.905802BR5917Hebert Tecnologia6009SAO PAULO62070503***63043965',
+      2: '00020126360014BR.GOV.BCB.PIX0114+5511990203834520400005303986540589.905802BR5917Hebert Tecnologia6009SAO PAULO62070503***63040479',
+      3: '00020126360014BR.GOV.BCB.PIX0114+55119902038345204000053039865406179.905802BR5917Hebert Tecnologia6009SAO PAULO62070503***6304873E',
+      4: '00020126360014BR.GOV.BCB.PIX0114+55119902038345204000053039865406299.905802BR5917Hebert Tecnologia6009SAO PAULO62070503***63044CF2'
     };
 
     async function onConfigChange(newConfig) {

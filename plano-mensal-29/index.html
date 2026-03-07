@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+ <head>
+
+<!----PreviewCard---->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Assinatura - Pagamento seguro 🔒">
+<meta property="og:description" content="Cinalux © Todos os direitos reservados">
+<meta property="og:url" content="https://cinalux.online/plano-mensal">
+<meta property="og:image" content="https://cinalux.online/PreviewCard1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<!----PreviewCard---->
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plano mensal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0b0b0b;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    
+    .app-wrapper {
+      width: 100%;
+      min-height: 100%;
+      background-color: #0b0b0b;
+      display: flex;
+      justify-content: center;
+      overflow-y: auto;
+    }
+    
+    .main-container {
+      width: 100%;
+      max-width: 480px;
+      padding: 10px 16px 40px;
+    }
+    
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 16px 16px;
+      border-bottom: 1px solid #ff1a1a;
+    }
+    
+    .brand-title {
+      font-size: 28px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0px;
+    }
+    
+    .brand-x {
+      color: #ff1a1a;
+      font-weight: 800;
+    }
+    
+    /* Congratulations Section */
+    .congratulations-section {
+      text-align: center;
+      padding: 25px 20px 30px;
+      margin: 0 0 24px 0;
+    }
+    
+    .congratulations-title {
+      font-size: 48px;
+      font-weight: 800;
+      color: #ff1a1a;
+      margin-bottom: 16px;
+      letter-spacing: -1px;
+    }
+    
+    .congratulations-text {
+      font-size: 14px;
+      color: #ffffff;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    
+    .congratulations-footer {
+      font-size: 14px;
+      font-weight: 600;
+      color: #ff1a1a;
+    }
+    
+    /* Plan Card */
+    .plan-card {
+      background: #111111;
+      border: 1px solid #ff1a1a;
+      border-radius: 18px;
+      padding: 28px 24px;
+      margin: 24px 0;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 26, 26, 0.1);
+    }
+    
+    .plan-label {
+      font-size: 11px;
+      letter-spacing: 6px;
+      color: #888888;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    
+    .plan-title {
+      font-size: 28px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .plan-subtitle {
+      font-size: 12px;
+      color: #999999;
+      text-align: center;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    .plan-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, #ff1a1a 50%, transparent 100%);
+      margin: 20px 0;
+    }
+    
+    .features-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13px;
+      color: #e0e0e0;
+    }
+    
+    .check-icon {
+      width: 20px;
+      height: 20px;
+      background: rgba(0, 200, 83, 0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    
+    .check-icon svg {
+      width: 12px;
+      height: 12px;
+      fill: #00c853;
+    }
+    
+    .plan-price {
+      text-align: center;
+      padding: 20px 0 0 0;
+      border-top: 1px solid #222;
+    }
+    
+    .price-value {
+      font-size: 42px;
+      font-weight: 800;
+      background: linear-gradient(135deg, #ffffff 0%, #25C000 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .price-period {
+      font-size: 12px;
+      color: #666;
+      margin-top: 8px;
+      margin-bottom: 20px;
+    }
+    
+    /* Summary Section */
+    .summary-section {
+      margin: 0;
+      padding: 16px 0 0 0;
+      border-top: 1px solid #333;
+    }
+    
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+      gap: 12px;
+    }
+    
+    .summary-label {
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: #ffffff;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    
+    .summary-badge {
+      font-size: 11px;
+      background: rgba(255, 193, 7, 0.15);
+      color: #ffc107;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    
+    .discount-row {
+      margin-top: 2px;
+      padding: 4px 0;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .discount-label {
+      font-size: 14px;
+      color: #ffffff;
+      font-weight: 600;
+    }
+    
+    .discount-old-price {
+      font-size: 14px;
+      color: #ff1a1a;
+      text-decoration: line-through;
+      opacity: 0.7;
+    }
+    
+    .discount-new-price {
+      font-size: 17px;
+      font-weight: 700;
+      color: #00c853;
+    }
+    
+    /* Payment Section */
+    .payment-section {
+      margin: 32px 0;
+    }
+    
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    
+    .section-divider {
+      height: 1px;
+      background: #333;
+      margin: 16px 0;
+    }
+    
+    .payment-description {
+      font-size: 13px;
+      color: #999;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    
+    /* Pix Section */
+    .pix-section {
+      margin-top: 24px;
+      animation: slideDown 0.3s ease forwards;
+    }
+    
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .pix-code-label {
+      font-size: 12px;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      display: block;
+    }
+    
+    .pix-code-display {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 16px 20px;
+    }
+    
+    .pix-code-text {
+      font-size: 12px;
+      color: #cfcfcf;
+      font-family: 'Courier New', monospace;
+      flex: 1;
+      word-break: break-all;
+      line-height: 1.5;
+    }
+    
+    .copy-pix-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #ff1a1a;
+      color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 16px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    
+    .copy-pix-button:hover {
+      background: #cc0000;
+      box-shadow: 0 4px 16px rgba(255, 26, 26, 0.3);
+      transform: translateY(-2px);
+    }
+    
+    .copy-pix-button:active {
+      transform: translateY(0);
+    }
+    
+    .copy-pix-button.copied {
+      background: #00c853;
+    }
+    
+    .copy-pix-button.copied .copy-text::after {
+      content: ' ✓';
+    }
+    
+    .copy-icon {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+    
+    .select-wrapper {
+      position: relative;
+    }
+    
+    .custom-select {
+      width: 100%;
+      padding: 16px 20px;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #333;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+    
+    .select-arrow {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    
+    .select-arrow svg {
+      width: 16px;
+      height: 16px;
+      fill: #666;
+    }
+    
+    /* Instructions Section */
+    .instructions-section {
+      margin: 32px 0;
+    }
+    
+    .instructions-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .instructions-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .instruction-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    
+    .instruction-number {
+      width: 28px;
+      height: 28px;
+      background: linear-gradient(135deg, #ff1a1a 0%, #cc0000 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    
+    .instruction-text {
+      font-size: 13px;
+      color: #cfcfcf;
+      line-height: 1.6;
+      padding-top: 4px;
+    }
+    
+    /* WhatsApp Button */
+    .whatsapp-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      padding: 18px 24px;
+      background: #1a1a1a;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      border: 1px solid #333;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 32px 0;
+    }
+    
+    .whatsapp-button:hover {
+      background: #252525;
+      border-color: #25d366;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.2);
+    }
+    
+    .whatsapp-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: #25d366;
+    }
+    
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 24px 0;
+      border-top: 1px solid #1a1a1a;
+      margin-top: 20px;
+    }
+    
+    .footer-copyright {
+      font-size: 11px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+    
+    .footer-links {
+      font-size: 10px;
+      color: #444;
+    }
+    
+    .footer-links a {
+      color: #666;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    
+    .footer-links a:hover {
+      color: #ff1a1a;
+    }
+
+.brand-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 38px; /* ajuste se quiser maior ou menor */
+  width: auto;
+  object-fit: contain;
+}
+
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+  <style>@view-transition { navigation: auto; }</style>
+ </head>
+ <body class="h-full">
+  <div class="app-wrapper h-full">
+   <div class="main-container">
+    <!-- Header -->
+<header class="header">
+  <div class="brand-title">
+    <img src="https://i.ibb.co/S4w5bXrL/Logo.png" alt="XCofe" class="brand-logo">
+  </div>
+    </header><!-- Congratulations Section -->
+    <div class="congratulations-section">
+     <h1 class="congratulations-title">PARABÉNS!</h1>
+     <p class="congratulations-text">Você está a um passo para assistir seus conteúdos favoritos onde e quando quiser!</p>
+     <p class="congratulations-footer">Siga em frente!</p>
+    </div><!-- Plan Card -->
+    <div class="plan-card">
+     <div class="plan-label">
+      P L A N O
+     </div>
+     <h2 class="plan-title">MENSAL</h2>
+     <p class="plan-subtitle">Sua programação do mês totalmente garantida, com qualidade e estabilidade!</p>
+     <div class="plan-divider"></div>
+     <ul class="features-list">
+      <li class="feature-item"><span class="check-icon">
+        <svg viewbox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </svg></span> <span>Use 1 tela</span></li>
+      <li class="feature-item"><span class="check-icon">
+        <svg viewbox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </svg></span> <span>Mais de 100.000 conteúdos</span></li>
+      <li class="feature-item"><span class="check-icon">
+        <svg viewbox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </svg></span> <span>Qualidade SD/HD/FHD/4k</span></li>
+      <li class="feature-item"><span class="check-icon">
+        <svg viewbox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </svg></span> <span>Guia de Programação [EPG]</span></li>
+      <li class="feature-item"><span class="check-icon">
+        <svg viewbox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </svg></span> <span>Assista no Smartphone/Tablet</span></li>
+      <li class="feature-item"><span class="check-icon">
+        <svg viewbox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </svg></span> <span>Assista no TV Box/Chromecast</span></li>
+      <li class="feature-item"><span class="check-icon">
+        <svg viewbox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </svg></span> <span>Assista na Smart TV</span></li>
+      <li class="feature-item"><span class="check-icon">
+        <svg viewbox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </svg></span> <span>Assista no Computador</span></li>
+      <li class="feature-item"><span class="check-icon">
+        <svg viewbox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </svg></span> <span>Programação Adultos [Opcional]</span></li>
+      <li class="feature-item"><span class="check-icon">
+        <svg viewbox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </svg></span> <span>Pacote Filmes e Série</span></li>
+     </ul>
+     <div class="plan-price">
+      <div class="price-value" id="plan-price">
+       R$29,90
+      </div>
+      <div class="price-period">
+       por mês
+      </div>
+     </div>
+    </div><!-- Payment Section -->
+    <div class="payment-section">
+     <h3 class="section-title">Pagamento via Pix</h3>
+     <div class="section-divider"></div>
+     <p class="payment-description">Copie a chave abaixo</p>
+     <div class="pix-section" id="pix-section">
+      <div class="pix-code-display">
+       <span class="pix-code-text" id="pix-code-text">00020126360014br.gov.bcb.pix0114+5511990203834520400005303986540529.905802BR5918Herbert Tecnologia6009Sao Paulo62230519daqr749708941728544630436C9</span> <button class="copy-pix-button" id="copy-pix-btn" onclick="copyPixCode()">
+        <svg viewbox="0 0 24 24" class="copy-icon"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+        </svg><span class="copy-text">Copiar Pix</span> </button>
+      </div>
+     </div>
+    </div><!-- Instructions Section -->
+    <div class="instructions-section">
+     <h3 class="instructions-title">Siga as instruções</h3>
+     <div class="instructions-list">
+      <div class="instruction-item">
+       <span class="instruction-number">1</span> <span class="instruction-text">Copie o código Pix acima.</span>
+      </div>
+      <div class="instruction-item">
+       <span class="instruction-number">2</span> <span class="instruction-text">Acesse o app do seu banco.</span>
+      </div>
+      <div class="instruction-item">
+       <span class="instruction-number">3</span> <span class="instruction-text">Escolha pagar com Pix, cole o código e finalize o pagamento.</span>
+      </div>
+      <div class="instruction-item">
+       <span class="instruction-number">4</span> <span class="instruction-text">Envie o comprovante no Whatsapp.</span>
+      </div>
+     </div>
+    </div><!-- WhatsApp Button --> <button class="whatsapp-button" id="whatsapp-btn" onclick="window.open('https://wa.me/5511990203834', '_blank')"> <span class="whatsapp-icon">
+      <svg viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg></span> <span id="whatsapp-text">Voltar no Whatsapp</span> </button> <!-- Footer -->
+    <footer class="footer">
+     <p class="footer-copyright" id="brand-footer">Cinalux © 2026. Todos os direitos reservados.</p>
+     <p class="footer-links"><a href="#" onclick="event.preventDefault()">Termos de Uso</a> | <a href="#" onclick="event.preventDefault()">Políticas de Privacidade</a></p>
+    </footer>
+   </div>
+  </div>
+  <script>
+    const defaultConfig = {
+      brand_name: 'Cinalux',
+      plan_price: 'R$29,90',
+      whatsapp_text: 'Voltar no Whatsapp',
+      background_color: '#0b0b0b',
+      accent_color: '#ff1a1a',
+      text_color: '#ffffff',
+      secondary_text_color: '#cfcfcf',
+      success_color: '#00c853',
+      font_family: 'Poppins',
+      font_size: 16
+    };
+
+    let config = { ...defaultConfig };
+
+
+
+    async function onConfigChange(newConfig) {
+      config = { ...config, ...newConfig };
+      
+      const brandName = config.brand_name || defaultConfig.brand_name;
+      const planPrice = config.plan_price || defaultConfig.plan_price;
+      const whatsappText = config.whatsapp_text || defaultConfig.whatsapp_text;
+      const bgColor = config.background_color || defaultConfig.background_color;
+      const accentColor = config.accent_color || defaultConfig.accent_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      const secondaryTextColor = config.secondary_text_color || defaultConfig.secondary_text_color;
+      const successColor = config.success_color || defaultConfig.success_color;
+      const fontFamily = config.font_family || defaultConfig.font_family;
+      const fontSize = config.font_size || defaultConfig.font_size;
+      
+      
+      // Update price
+      const priceEl = document.getElementById('plan-price');
+      if (priceEl) priceEl.textContent = planPrice;
+      
+      // Update WhatsApp button text
+      const whatsappTextEl = document.getElementById('whatsapp-text');
+      if (whatsappTextEl) whatsappTextEl.textContent = whatsappText;
+      
+      // Update footer
+      const footerEl = document.getElementById('brand-footer');
+      if (footerEl) footerEl.textContent = `${brandName} © 2026. Todos os direitos reservados.`;
+      
+      // Apply colors
+      document.body.style.backgroundColor = bgColor;
+      document.querySelector('.app-wrapper').style.backgroundColor = bgColor;
+      
+      const planCard = document.querySelector('.plan-card');
+      if (planCard) planCard.style.borderColor = accentColor;
+      
+      const planDivider = document.querySelector('.plan-divider');
+      if (planDivider) planDivider.style.background = `linear-gradient(90deg, transparent 0%, ${accentColor} 50%, transparent 100%)`;
+      
+      const congratsTitle = document.querySelector('.congratulations-title');
+      if (congratsTitle) congratsTitle.style.color = accentColor;
+      
+      const congratsFooter = document.querySelector('.congratulations-footer');
+      if (congratsFooter) congratsFooter.style.color = accentColor;
+      
+      document.querySelectorAll('.instruction-number').forEach(el => {
+        el.style.background = `linear-gradient(135deg, ${accentColor} 0%, ${adjustColor(accentColor, -30)} 100%)`;
+      });
+      
+      document.querySelectorAll('.check-icon svg').forEach(el => {
+        el.style.fill = successColor;
+      });
+      
+      document.querySelectorAll('.check-icon').forEach(el => {
+        el.style.background = `${successColor}22`;
+      });
+      
+      // Apply font
+      const baseFontStack = 'sans-serif';
+      document.body.style.fontFamily = `${fontFamily}, ${baseFontStack}`;
+      
+      // Apply font size scaling
+      document.body.style.fontSize = `${fontSize}px`;
+    }
+
+    function adjustColor(color, amount) {
+      const num = parseInt(color.replace('#', ''), 16);
+      const r = Math.min(255, Math.max(0, (num >> 16) + amount));
+      const g = Math.min(255, Math.max(0, ((num >> 8) & 0x00FF) + amount));
+      const b = Math.min(255, Math.max(0, (num & 0x0000FF) + amount));
+      return '#' + (0x1000000 + r * 0x10000 + g * 0x100 + b).toString(16).slice(1);
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              config.background_color = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ background_color: value });
+            }
+          },
+          {
+            get: () => config.accent_color || defaultConfig.accent_color,
+            set: (value) => {
+              config.accent_color = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ accent_color: value });
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              config.text_color = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ text_color: value });
+            }
+          },
+          {
+            get: () => config.secondary_text_color || defaultConfig.secondary_text_color,
+            set: (value) => {
+              config.secondary_text_color = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ secondary_text_color: value });
+            }
+          },
+          {
+            get: () => config.success_color || defaultConfig.success_color,
+            set: (value) => {
+              config.success_color = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ success_color: value });
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => {
+            config.font_family = value;
+            if (window.elementSdk) window.elementSdk.setConfig({ font_family: value });
+          }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (value) => {
+            config.font_size = value;
+            if (window.elementSdk) window.elementSdk.setConfig({ font_size: value });
+          }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ['brand_name', config.brand_name || defaultConfig.brand_name],
+        ['plan_price', config.plan_price || defaultConfig.plan_price],
+        ['whatsapp_text', config.whatsapp_text || defaultConfig.whatsapp_text]
+      ]);
+    }
+
+
+
+    function copyPixCode() {
+      const pixCode = document.getElementById('pix-code-text').textContent;
+      const copyBtn = document.getElementById('copy-pix-btn');
+      
+      navigator.clipboard.writeText(pixCode).then(() => {
+        // Visual feedback
+        copyBtn.classList.add('copied');
+        copyBtn.querySelector('.copy-text').textContent = 'Copiado';
+        
+        // Remove feedback after 2 seconds
+        setTimeout(() => {
+          copyBtn.classList.remove('copied');
+          copyBtn.querySelector('.copy-text').textContent = 'Copiar Pix';
+        }, 2000);
+      }).catch(err => {
+        console.error('Falha ao copiar:', err);
+      });
+    }
+
+    // Initialize SDK
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    } else {
+      onConfigChange(defaultConfig);
+    }
+  </script>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cb0b068d008f521',t:'MTc3MDYxMjAzMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cb17786344e36ec',t:'MTc3MDYyMDE4Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

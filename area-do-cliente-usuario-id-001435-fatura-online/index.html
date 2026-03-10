@@ -697,7 +697,7 @@
      <h3 class="section-title">Pagamento via Pix</h3>
      <div class="section-divider"></div>
      <p class="payment-description">Confirme o plano para pagar</p>
-     <div class="select-wrapper"><select class="custom-select" id="points-select"> <option value="" disabled selected>Clique aqui para selecionar</option> <option value="1">Plano mensal - R$29,90</option> <option value="2">Plano Trimestral - R$79,90</option> <option value="3">Plano Semestral - R$154,90</option> <option value="4">Plano Anual - R$249,90</option> </select>
+     <div class="select-wrapper"><select class="custom-select" id="points-select"> <option value="" disabled selected>Clique aqui para selecionar</option> <option value="1">1 Ponto - R$29,90</option> <option value="2">2 Pontos - R$49,90</option> <option value="3">3 Pontos - R$74,90</option> <option value="4">4 Pontos - R$99,90</option> <option value="4">5 Pontos - R$124,90</option> </select>
       <div class="select-arrow">
        <svg viewbox="0 0 24 24">
         <path d="M7 10l5 5 5-5z" />
@@ -756,10 +756,11 @@
 
     // PIX codes for each option
     const pixCodes = {
-      1: '00020126360014br.gov.bcb.pix0114+5511990203834520400005303986540529.905802BR5918Herbert Tecnologia6009Sao Paulo62230519daqr749708941728544630436C9',
-      2: '00020126360014br.gov.bcb.pix0114+5511990203834520400005303986540579.905802BR5918Herbert Tecnologia6009Sao Paulo62230519daqr74970894150000963049BF3',
-      3: '00020126360014br.gov.bcb.pix0114+55119902038345204000053039865406154.905802BR5918Herbert Tecnologia6009Sao Paulo62230519daqr7497089412342566304ECAC',
-      4: '00020126360014br.gov.bcb.pix0114+55119902038345204000053039865406249.905802BR5918Herbert Tecnologia6009Sao Paulo62230519daqr749708941303158630475F1'
+      1: '00020126350014BR.GOV.BCB.PIX0113+551190203834520400005303986540529.005802BR5907Cinalux6009SAO PAULO62070503***630428B2',
+      2: '00020126350014BR.GOV.BCB.PIX0113+551190203834520400005303986540549.005802BR5907Cinalux6009SAO PAULO62070503***63044586',
+      3: '00020126350014BR.GOV.BCB.PIX0113+551190203834520400005303986540574.005802BR5907Cinalux6009SAO PAULO62070503***6304A02F',
+      4: '00020126350014BR.GOV.BCB.PIX0113+551190203834520400005303986540599.005802BR5907Cinalux6009SAO PAULO62070503***63048D98',
+      4: '00020126350014BR.GOV.BCB.PIX0113+5511902038345204000053039865406124.005802BR5907Cinalux6009SAO PAULO62070503***6304F981'
     };
 
     async function onConfigChange(newConfig) {

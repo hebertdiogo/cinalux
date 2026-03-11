@@ -686,7 +686,7 @@
      </ul>
      <div class="plan-price">
       <div class="price-value" id="plan-price">
-       R$34,90
+       R$29,90
       </div>
       <div class="price-period">
        por mês
@@ -697,7 +697,7 @@
      <h3 class="section-title">Pagamento via Pix</h3>
      <div class="section-divider"></div>
      <p class="payment-description">Confirme o plano para pagar</p>
-     <div class="select-wrapper"><select class="custom-select" id="points-select"> <option value="" disabled selected>Clique aqui para selecionar</option> <option value="1">Plano mensal - R$34,90</option> <option value="2">Plano Trimestral - R$89,90</option> <option value="3">Plano Semestral - R$179,90</option> <option value="4">Plano Anual - R$299,90</option> </select>
+     <div class="select-wrapper"><select class="custom-select" id="points-select"> <option value="" disabled selected>Clique aqui para selecionar</option> <option value="1">1 Ponto - R$34,90</option> <option value="2">2 Pontos - R$59,90</option> <option value="3">3 Pontos - R$84,90</option> <option value="4">4 Pontos - R$119,90</option> <option value="4">5 Pontos - R$149,90</option> </select>
       <div class="select-arrow">
        <svg viewbox="0 0 24 24">
         <path d="M7 10l5 5 5-5z" />
@@ -741,7 +741,7 @@
     const defaultConfig = {
       brand_name: 'CINALUX',
       alert_message: 'Sua assinatura expirou',
-      plan_price: 'R$34,90',
+      plan_price: 'R$29,90',
       whatsapp_text: 'Voltar no Whatsapp',
       background_color: '#0b0b0b',
       accent_color: '#ff1a1a',
@@ -756,10 +756,11 @@
 
     // PIX codes for each option
     const pixCodes = {
-      1: '00020126360014BR.GOV.BCB.PIX0114+5511990203834520400005303986540534.905802BR5917Hebert Tecnologia6009SAO PAULO62070503***63043965',
-      2: '00020126360014BR.GOV.BCB.PIX0114+5511990203834520400005303986540589.905802BR5917Hebert Tecnologia6009SAO PAULO62070503***63040479',
-      3: '00020126360014BR.GOV.BCB.PIX0114+55119902038345204000053039865406179.905802BR5917Hebert Tecnologia6009SAO PAULO62070503***6304873E',
-      4: '00020126360014BR.GOV.BCB.PIX0114+55119902038345204000053039865406299.905802BR5917Hebert Tecnologia6009SAO PAULO62070503***63044CF2'
+      1: '00020126360014BR.GOV.BCB.PIX0114+5511990203834520400005303986540534.005802BR5907CINALUX6009SAO PAULO62070503***63046D53',
+      2: '00020126360014BR.GOV.BCB.PIX0114+5511990203834520400005303986540559.005802BR5907CINALUX6009SAO PAULO62070503***6304D354',
+      3: '00020126360014BR.GOV.BCB.PIX0114+5511990203834520400005303986540584.005802BR5907CINALUX6009SAO PAULO62070503***6304C879',
+      4: '00020126360014BR.GOV.BCB.PIX0114+55119902038345204000053039865406119.005802BR5907CINALUX6009SAO PAULO62070503***6304A137',
+      5: '00020126360014BR.GOV.BCB.PIX0114+55119902038345204000053039865406149.005802BR5907CINALUX6009SAO PAULO62070503***6304FA99'
     };
 
     async function onConfigChange(newConfig) {

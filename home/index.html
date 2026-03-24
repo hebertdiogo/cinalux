@@ -1,382 +1,1094 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-
-<!----PreviewCard---->
-<meta property="og:type" content="website">
-<meta property="og:title" content="O melhor sistema de canais para sua TV! Teste gratuito">
-<meta property="og:description" content="Cinalux © Todos os direitos reservados">
-<meta property="og:url" content="https://cinalux.online/area-do-cliente-usuario-id-001432-fatura-online">
-<meta property="og:image" content="https://cinalux.online/PreviewCard.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<!----PreviewCard---->
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+ <head>
 
 <!----Favicon---->
 <link rel="icon" type="image/png" sizes="32x32" href="Favicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="Favicon.png">
 <!----Favicon---->
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinalux | Canais Ilimitados</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary-red: #e50914;
-            --dark-overlay: rgba(0, 0, 0, 0.6);
+<!----PreviewCard---->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Seu site em até 48 horas">
+<meta property="og:description" content="Vertex © Todos os direitos reservados">
+<meta property="og:url" content="https://vertexagency.online">
+<meta property="og:image" content="https://vertexagency.online/PreviewCard.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<!----PreviewCard---->
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vertex - Agência especializada em desenvolvimento de sites profissionais com entrega garantida em até 48 horas. Design premium, otimizado para conversão.">
+  <meta name="keywords" content="criação de sites, sites profissionais, landing pages, sites em 48 horas, web design">
+  <title>Vertex Agency</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #0a0a0b;
+      --color-surface: #141416;
+      --color-text: #f5f5f7;
+      --color-primary: #6366f1;
+      --color-secondary: #818cf8;
+    }
+    
+    html { scroll-behavior: smooth; }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--color-bg);
+      color: var(--color-text);
+    }
+    
+    .font-display { font-family: 'Space Grotesk', sans-serif; }
+    
+    /* Gradient backgrounds */
+    .gradient-primary {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .gradient-border {
+      position: relative;
+      background: var(--color-surface);
+      border-radius: 16px;
+    }
+    
+    .gradient-border::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      padding: 1px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+    
+    /* Glow effects */
+    .glow-primary {
+      box-shadow: 0 0 60px rgba(99, 102, 241, 0.3), 0 0 100px rgba(99, 102, 241, 0.1);
+    }
+    
+    .glow-text {
+      text-shadow: 0 0 40px rgba(99, 102, 241, 0.5);
+    }
+    
+    /* Animations */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+    
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.4); }
+      50% { box-shadow: 0 0 40px rgba(99, 102, 241, 0.6); }
+    }
+    
+    @keyframes fade-in-up {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes slide-in-left {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    
+    @keyframes slide-in-right {
+      from { opacity: 0; transform: translateX(50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    
+    .animate-float { animation: float 6s ease-in-out infinite; }
+    .animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+    .animate-fade-in { animation: fade-in-up 0.8s ease-out forwards; }
+    .animate-slide-left { animation: slide-in-left 0.8s ease-out forwards; }
+    .animate-slide-right { animation: slide-in-right 0.8s ease-out forwards; }
+    
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+    .delay-400 { animation-delay: 0.4s; }
+    .delay-500 { animation-delay: 0.5s; }
+    
+    /* Grid pattern */
+    .grid-pattern {
+      background-image: 
+        linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    
+    /* Mockup styles */
+    .mockup-browser {
+      background: linear-gradient(180deg, #1c1c1e 0%, #141416 100%);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+    
+    .mockup-dots span {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    
+    /* WhatsApp floating button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 1000;
+      width: 60px;
+      height: 60px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+    }
+    
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+    }
+    
+    /* Button hover effects */
+    .btn-primary {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+    }
+    
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s ease;
+    }
+    
+    .btn-primary:hover::before {
+      left: 100%;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 40px rgba(99, 102, 241, 0.4);
+    }
+    
+    /* Card hover */
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-8px);
+    }
+    
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+    
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: var(--color-bg);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: var(--color-primary);
+      border-radius: 4px;
+    }
+    
+    /* FAQ accordion */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    
+    .faq-item.active .faq-answer {
+      max-height: 200px;
+    }
+    
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+    
+    /* Portfolio card */
+    .portfolio-card {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .portfolio-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 0%, rgba(99, 102, 241, 0.1) 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .portfolio-card:hover::after {
+      opacity: 1;
+    }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full overflow-auto">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0b]/80 backdrop-blur-xl border-b border-white/5">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 md:h-20">
+     <a href="#" class="flex items-center gap-2"> <img src="https://i.ibb.co/s9YNzYkg/Logo.png" alt="Vertex Logo" class="w-32 h-32 object-contain"> </a>
+     <div class="hidden md:flex items-center gap-8">
+      <a href="#beneficios" class="text-sm text-gray-400 hover:text-white transition-colors">Benefícios</a> <a href="#processo" class="text-sm text-gray-400 hover:text-white transition-colors">Como Funciona</a> <a href="#portfolio" class="text-sm text-gray-400 hover:text-white transition-colors">Portfólio</a> <a href="#depoimentos" class="text-sm text-gray-400 hover:text-white transition-colors">Depoimentos</a> <a href="#faq" class="text-sm text-gray-400 hover:text-white transition-colors">FAQ</a>
+     </div><button id="nav-cta" class="hidden md:inline-flex gradient-primary text-white font-semibold px-6 py-2.5 rounded-full text-sm btn-primary"> Falar no WhatsApp </button> <button id="mobile-menu-btn" class="md:hidden text-white p-2">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg></button>
+    </div>
+   </div><!-- Mobile Menu -->
+   <div id="mobile-menu" class="hidden md:hidden bg-[#0a0a0b] border-t border-white/5">
+    <div class="px-4 py-4 space-y-3">
+     <a href="#beneficios" class="block text-gray-400 hover:text-white py-2">Benefícios</a> <a href="#processo" class="block text-gray-400 hover:text-white py-2">Como Funciona</a> <a href="#portfolio" class="block text-gray-400 hover:text-white py-2">Portfólio</a> <a href="#depoimentos" class="block text-gray-400 hover:text-white py-2">Depoimentos</a> <a href="#faq" class="block text-gray-400 hover:text-white py-2">FAQ</a> <button id="mobile-cta" class="w-full gradient-primary text-white font-semibold px-6 py-3 rounded-full text-center mt-4 btn-primary"> Falar no WhatsApp </button>
+    </div>
+   </div>
+  </nav><!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center pt-20 grid-pattern overflow-hidden">
+   <!-- Background elements -->
+   <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-500/20 rounded-full blur-[128px]"></div>
+   <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500/20 rounded-full blur-[128px]"></div>
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+     <!-- Content -->
+     <div class="text-center lg:text-left">
+      <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 mb-6 animate-fade-in">
+       <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> <span class="text-sm text-gray-300">Vagas limitadas esta semana</span>
+      </div>
+      <h1 id="hero-headline" class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in delay-100" style="opacity: 0;">Seu site profissional pronto em até <span class="gradient-text glow-text">48 horas.</span></h1>
+      <p id="hero-subheadline" class="text-lg sm:text-xl text-gray-400 mb-8 max-w-xl mx-auto lg:mx-0 animate-fade-in delay-200" style="opacity: 0;">Design premium, velocidade de entrega e foco total em resultado. Transformamos sua ideia em um site de alta conversão, sem enrolação.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in delay-300" style="opacity: 0;">
+       <button id="hero-cta-primary" class="gradient-primary text-white font-semibold px-8 py-4 rounded-full text-lg btn-primary inline-flex items-center justify-center gap-2"> <span id="hero-cta-text">Quero meu site em 48h</span>
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg></button> <a href="#portfolio" id="hero-cta-secondary" class="bg-white/5 border border-white/10 text-white font-semibold px-8 py-4 rounded-full text-lg hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2"> <span id="hero-secondary-text">Ver Portfólio</span>
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+        </svg></a>
+      </div><!-- Trust badges -->
+      <div class="flex items-center gap-6 mt-10 justify-center lg:justify-start animate-fade-in delay-400" style="opacity: 0;">
+       <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-green-400" fill="currentColor" viewbox="0 0 20 20">
+         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg><span class="text-sm text-gray-400">+150 sites entregues</span>
+       </div>
+       <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20">
+         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg><span class="text-sm text-gray-400">4.9/5 avaliação</span>
+       </div>
+      </div>
+     </div><!-- Mockup -->
+     <div class="relative animate-slide-right delay-200" style="opacity: 0;">
+      <div class="mockup-browser glow-primary animate-float">
+       <div class="flex items-center gap-2 px-4 py-3 border-b border-white/10">
+        <div class="mockup-dots flex gap-1.5">
+         <span class="bg-red-500"></span> <span class="bg-yellow-500"></span> <span class="bg-green-500"></span>
+        </div>
+        <div class="flex-1 bg-white/5 rounded-md px-3 py-1.5 text-xs text-gray-500 text-center">
+         vertex.com.br
+        </div>
+       </div>
+       <div class="p-4">
+        <!-- Dashboard mockup -->
+        <div class="bg-gradient-to-br from-indigo-600/20 to-violet-600/20 rounded-lg p-6 space-y-4">
+         <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+           <div class="w-10 h-10 gradient-primary rounded-lg"></div>
+           <div>
+            <div class="h-3 bg-white/20 rounded w-24"></div>
+            <div class="h-2 bg-white/10 rounded w-16 mt-2"></div>
+           </div>
+          </div>
+          <div class="flex gap-2">
+           <div class="w-8 h-8 bg-white/10 rounded-lg"></div>
+           <div class="w-8 h-8 bg-white/10 rounded-lg"></div>
+          </div>
+         </div>
+         <div class="grid grid-cols-3 gap-3">
+          <div class="bg-white/5 rounded-lg p-4 text-center">
+           <div class="text-2xl font-bold text-white">
+            48h
+           </div>
+           <div class="text-xs text-gray-400 mt-1">
+            Entrega
+           </div>
+          </div>
+          <div class="bg-white/5 rounded-lg p-4 text-center">
+           <div class="text-2xl font-bold text-indigo-400">
+            100%
+           </div>
+           <div class="text-xs text-gray-400 mt-1">
+            Responsivo
+           </div>
+          </div>
+          <div class="bg-white/5 rounded-lg p-4 text-center">
+           <div class="text-2xl font-bold text-green-400">
+            SEO
+           </div>
+           <div class="text-xs text-gray-400 mt-1">
+            Otimizado
+           </div>
+          </div>
+         </div>
+         <div class="space-y-2">
+          <div class="h-3 bg-white/10 rounded w-full"></div>
+          <div class="h-3 bg-white/10 rounded w-4/5"></div>
+          <div class="h-3 bg-white/10 rounded w-3/5"></div>
+         </div>
+         <div class="flex gap-3">
+          <div class="flex-1 h-10 gradient-primary rounded-lg"></div>
+          <div class="flex-1 h-10 bg-white/10 rounded-lg"></div>
+         </div>
+        </div>
+       </div>
+      </div><!-- Floating elements -->
+      <div class="absolute -top-4 -right-4 bg-green-500/20 border border-green-500/30 rounded-xl px-4 py-2 animate-float" style="animation-delay: 1s;">
+       <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg><span class="text-sm text-green-400 font-medium">Site Online!</span>
+       </div>
+      </div>
+      <div class="absolute -bottom-4 -left-4 bg-indigo-500/20 border border-indigo-500/30 rounded-xl px-4 py-2 animate-float" style="animation-delay: 2s;">
+       <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg><span class="text-sm text-indigo-400 font-medium">48h Garantido</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Benefits Section -->
+  <section id="beneficios" class="py-20 md:py-32 relative">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal">
+     <span class="inline-block gradient-text font-semibold text-sm uppercase tracking-wider mb-4">Por que escolher a Vertex</span>
+     <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Tudo que você precisa em um <span class="gradient-text">único pacote</span></h2>
+     <p class="text-gray-400 text-lg max-w-2xl mx-auto">Oferecemos uma solução completa para você ter presença online profissional, sem complicação.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <!-- Benefit 1 -->
+     <div class="gradient-border p-6 lg:p-8 card-hover reveal">
+      <div class="w-14 h-14 gradient-primary rounded-2xl flex items-center justify-center mb-6">
+       <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+       </svg>
+      </div>
+      <h3 class="font-display text-xl font-bold mb-3">Entrega em 48h</h3>
+      <p class="text-gray-400">Seu site pronto em até 48 horas após a aprovação do briefing. Sem atrasos, sem desculpas.</p>
+     </div><!-- Benefit 2 -->
+     <div class="gradient-border p-6 lg:p-8 card-hover reveal">
+      <div class="w-14 h-14 gradient-primary rounded-2xl flex items-center justify-center mb-6">
+       <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+       </svg>
+      </div>
+      <h3 class="font-display text-xl font-bold mb-3">Design Responsivo</h3>
+      <p class="text-gray-400">Layout profissional que funciona perfeitamente em computadores, tablets e smartphones.</p>
+     </div><!-- Benefit 3 -->
+     <div class="gradient-border p-6 lg:p-8 card-hover reveal">
+      <div class="w-14 h-14 gradient-primary rounded-2xl flex items-center justify-center mb-6">
+       <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+       </svg>
+      </div>
+      <h3 class="font-display text-xl font-bold mb-3">Otimizado para Conversão</h3>
+      <p class="text-gray-400">Estratégia visual e estrutural pensada para transformar visitantes em clientes reais.</p>
+     </div><!-- Benefit 4 -->
+     <div class="gradient-border p-6 lg:p-8 card-hover reveal">
+      <div class="w-14 h-14 gradient-primary rounded-2xl flex items-center justify-center mb-6">
+       <svg class="w-7 h-7 text-white" fill="currentColor" viewbox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+       </svg>
+      </div>
+      <h3 class="font-display text-xl font-bold mb-3">Integração WhatsApp</h3>
+      <p class="text-gray-400">Botão de WhatsApp estrategicamente posicionado para você não perder nenhum contato.</p>
+     </div><!-- Benefit 5 -->
+     <div class="gradient-border p-6 lg:p-8 card-hover reveal">
+      <div class="w-14 h-14 gradient-primary rounded-2xl flex items-center justify-center mb-6">
+       <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+       </svg>
+      </div>
+      <h3 class="font-display text-xl font-bold mb-3">SEO Básico Incluso</h3>
+      <p class="text-gray-400">Configurações técnicas para seu site ser encontrado no Google desde o primeiro dia.</p>
+     </div><!-- Benefit 6 -->
+     <div class="gradient-border p-6 lg:p-8 card-hover reveal">
+      <div class="w-14 h-14 gradient-primary rounded-2xl flex items-center justify-center mb-6">
+       <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+       </svg>
+      </div>
+      <h3 class="font-display text-xl font-bold mb-3">Suporte Pós-Entrega</h3>
+      <p class="text-gray-400">7 dias de suporte gratuito após a entrega para ajustes e dúvidas sobre seu site.</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Process Section -->
+  <section id="processo" class="py-20 md:py-32 relative bg-gradient-to-b from-transparent via-indigo-500/5 to-transparent">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal">
+     <span class="inline-block gradient-text font-semibold text-sm uppercase tracking-wider mb-4">Processo Simplificado</span>
+     <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Como funciona a <span class="gradient-text">mágica</span></h2>
+     <p class="text-gray-400 text-lg max-w-2xl mx-auto">Um processo direto e sem burocracia para você ter seu site no ar o mais rápido possível.</p>
+    </div><!-- Desktop View -->
+    <div class="hidden lg:flex items-center justify-between gap-2">
+     <!-- Step 1 -->
+     <div class="text-center reveal flex-1">
+      <div class="relative inline-block mb-6">
+       <div class="w-20 h-20 gradient-primary rounded-3xl flex items-center justify-center relative z-10">
+        <span class="font-display text-3xl font-bold text-white">1</span>
+       </div>
+       <div class="absolute inset-0 gradient-primary rounded-3xl blur-xl opacity-50"></div>
+      </div>
+      <h3 class="font-display text-lg font-bold mb-3">Envie as Informações</h3>
+      <p class="text-gray-400 text-sm">Você preenche um briefing rápido com textos, fotos e referências do seu negócio.</p>
+     </div><!-- Arrow -->
+     <div class="flex-shrink-0 mb-12">
+      <svg class="w-8 h-8 text-indigo-500/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+      </svg>
+     </div><!-- Step 2 -->
+     <div class="text-center reveal flex-1">
+      <div class="relative inline-block mb-6">
+       <div class="w-20 h-20 gradient-primary rounded-3xl flex items-center justify-center relative z-10">
+        <span class="font-display text-3xl font-bold text-white">2</span>
+       </div>
+       <div class="absolute inset-0 gradient-primary rounded-3xl blur-xl opacity-50"></div>
+      </div>
+      <h3 class="font-display text-lg font-bold mb-3">Desenvolvimento</h3>
+      <p class="text-gray-400 text-sm">Nossa equipe cria seu site com design profissional e foco em conversão.</p>
+     </div><!-- Arrow -->
+     <div class="flex-shrink-0 mb-12">
+      <svg class="w-8 h-8 text-indigo-500/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+      </svg>
+     </div><!-- Step 3 -->
+     <div class="text-center reveal flex-1">
+      <div class="relative inline-block mb-6">
+       <div class="w-20 h-20 gradient-primary rounded-3xl flex items-center justify-center relative z-10">
+        <span class="font-display text-3xl font-bold text-white">3</span>
+       </div>
+       <div class="absolute inset-0 gradient-primary rounded-3xl blur-xl opacity-50"></div>
+      </div>
+      <h3 class="font-display text-lg font-bold mb-3">Revisão</h3>
+      <p class="text-gray-400 text-sm">Você revisa e solicita ajustes. Garantimos que fique exatamente como você precisa.</p>
+     </div><!-- Arrow -->
+     <div class="flex-shrink-0 mb-12">
+      <svg class="w-8 h-8 text-indigo-500/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+      </svg>
+     </div><!-- Step 4 -->
+     <div class="text-center reveal flex-1">
+      <div class="relative inline-block mb-6">
+       <div class="w-20 h-20 gradient-primary rounded-3xl flex items-center justify-center relative z-10">
+        <span class="font-display text-3xl font-bold text-white">4</span>
+       </div>
+       <div class="absolute inset-0 gradient-primary rounded-3xl blur-xl opacity-50"></div>
+      </div>
+      <h3 class="font-display text-lg font-bold mb-3">Entrega em 48h</h3>
+      <p class="text-gray-400 text-sm">Site aprovado, publicado e pronto para receber seus clientes. É isso!</p>
+     </div>
+    </div><!-- Mobile/Tablet View -->
+    <div class="lg:hidden grid grid-cols-1 md:grid-cols-2 gap-8">
+     <!-- Step 1 -->
+     <div class="text-center reveal">
+      <div class="relative inline-block mb-6">
+       <div class="w-20 h-20 gradient-primary rounded-3xl flex items-center justify-center mx-auto relative z-10">
+        <span class="font-display text-3xl font-bold text-white">1</span>
+       </div>
+       <div class="absolute inset-0 gradient-primary rounded-3xl blur-xl opacity-50"></div>
+      </div>
+      <h3 class="font-display text-lg font-bold mb-3">Envie as Informações</h3>
+      <p class="text-gray-400 text-sm">Você preenche um briefing rápido com textos, fotos e referências do seu negócio.</p>
+     </div><!-- Step 2 -->
+     <div class="text-center reveal">
+      <div class="relative inline-block mb-6">
+       <div class="w-20 h-20 gradient-primary rounded-3xl flex items-center justify-center mx-auto relative z-10">
+        <span class="font-display text-3xl font-bold text-white">2</span>
+       </div>
+       <div class="absolute inset-0 gradient-primary rounded-3xl blur-xl opacity-50"></div>
+      </div>
+      <h3 class="font-display text-lg font-bold mb-3">Desenvolvimento</h3>
+      <p class="text-gray-400 text-sm">Nossa equipe cria seu site com design profissional e foco em conversão.</p>
+     </div><!-- Step 3 -->
+     <div class="text-center reveal">
+      <div class="relative inline-block mb-6">
+       <div class="w-20 h-20 gradient-primary rounded-3xl flex items-center justify-center mx-auto relative z-10">
+        <span class="font-display text-3xl font-bold text-white">3</span>
+       </div>
+       <div class="absolute inset-0 gradient-primary rounded-3xl blur-xl opacity-50"></div>
+      </div>
+      <h3 class="font-display text-lg font-bold mb-3">Revisão</h3>
+      <p class="text-gray-400 text-sm">Você revisa e solicita ajustes. Garantimos que fique exatamente como você precisa.</p>
+     </div><!-- Step 4 -->
+     <div class="text-center reveal">
+      <div class="relative inline-block mb-6">
+       <div class="w-20 h-20 gradient-primary rounded-3xl flex items-center justify-center mx-auto relative z-10">
+        <span class="font-display text-3xl font-bold text-white">4</span>
+       </div>
+       <div class="absolute inset-0 gradient-primary rounded-3xl blur-xl opacity-50"></div>
+      </div>
+      <h3 class="font-display text-lg font-bold mb-3">Entrega em 48h</h3>
+      <p class="text-gray-400 text-sm">Site aprovado, publicado e pronto para receber seus clientes. É isso!</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Portfolio Section -->
+  <section id="portfolio" class="py-20 md:py-32 relative">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal">
+     <span class="inline-block gradient-text font-semibold text-sm uppercase tracking-wider mb-4">Nosso Portfólio</span>
+     <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Projetos que <span class="gradient-text">geram resultado</span></h2>
+     <p class="text-gray-400 text-lg max-w-2xl mx-auto">Confira alguns dos sites que desenvolvemos para nossos clientes satisfeitos.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <!-- Portfolio 1 -->
+     <div class="gradient-border portfolio-card card-hover reveal overflow-hidden">
+      <div class="aspect-video bg-gradient-to-br from-emerald-500/20 to-teal-500/20 flex items-center justify-center overflow-hidden">
+       <img src="https://i.ibb.co/SwwHRbbT/Pag-3.png" alt="Portfolio project 1" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Image failed to load:', this.src); this.style.background='#e5e7eb'; this.alt='Image unavailable';">
+      </div>
+      <div class="p-6">
+       <span class="text-xs text-emerald-400 font-medium uppercase tracking-wider">Site Institucional</span>
+       <h3 class="font-display text-xl font-bold mt-2 mb-2">Construtora Elite</h3>
+       <p class="text-gray-400 text-sm">Site completo para construtora com portfólio de obras e formulário de orçamento.</p>
+       <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+        <span class="flex items-center gap-1">
+         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+         </svg> 36h </span> <span class="flex items-center gap-1">
+         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+         </svg> 100% Responsivo </span>
+       </div>
+      </div>
+     </div><!-- Portfolio 2 -->
+     <div class="gradient-border portfolio-card card-hover reveal overflow-hidden">
+      <div class="aspect-video bg-gradient-to-br from-rose-500/20 to-pink-500/20 flex items-center justify-center overflow-hidden">
+       <img src="https://i.ibb.co/zH0XhLmx/Pag-1.png" alt="Portfolio project 2" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Image failed to load:', this.src); this.style.background='#e5e7eb'; this.alt='Image unavailable';">
+      </div>
+      <div class="p-6">
+       <span class="text-xs text-rose-400 font-medium uppercase tracking-wider">Landing Page</span>
+       <h3 class="font-display text-xl font-bold mt-2 mb-2">Clínica Estética Bella</h3>
+       <p class="text-gray-400 text-sm">Landing page de alta conversão para clínica de estética com agendamento online.</p>
+       <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+        <span class="flex items-center gap-1">
+         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+         </svg> 24h </span> <span class="flex items-center gap-1">
+         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+         </svg> +40% Conversão </span>
+       </div>
+      </div>
+     </div><!-- Portfolio 3 -->
+     <div class="gradient-border portfolio-card card-hover reveal overflow-hidden">
+      <div class="aspect-video bg-gradient-to-br from-blue-500/20 to-cyan-500/20 flex items-center justify-center overflow-hidden">
+       <img src="https://i.ibb.co/fdRQmpZ1/Pag-2.png" alt="Portfolio project 3" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Image failed to load:', this.src); this.style.background='#e5e7eb'; this.alt='Image unavailable';">
+      </div>
+      <div class="p-6">
+       <span class="text-xs text-blue-400 font-medium uppercase tracking-wider">Profissional Liberal</span>
+       <h3 class="font-display text-xl font-bold mt-2 mb-2">Dr. Ricardo Mendes</h3>
+       <p class="text-gray-400 text-sm">Site profissional para advogado com áreas de atuação e formulário de contato.</p>
+       <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+        <span class="flex items-center gap-1">
+         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+         </svg> 42h </span> <span class="flex items-center gap-1">
+         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+         </svg> SEO Otimizado </span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Testimonials Section -->
+  <section id="depoimentos" class="py-20 md:py-32 relative bg-gradient-to-b from-transparent via-violet-500/5 to-transparent">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal">
+     <span class="inline-block gradient-text font-semibold text-sm uppercase tracking-wider mb-4">Depoimentos</span>
+     <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">O que nossos clientes <span class="gradient-text">dizem</span></h2>
+     <p class="text-gray-400 text-lg max-w-2xl mx-auto">Resultados reais de quem confiou na Vertex para criar sua presença online.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <!-- Testimonial 1 -->
+     <div class="gradient-border p-6 lg:p-8 card-hover reveal">
+      <div class="flex items-center gap-1 mb-4">
+       <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg>
+       <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg>
+       <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg>
+       <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg>
+       <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg>
+      </div>
+      <p class="text-gray-300 mb-6 leading-relaxed">"Incrível! Recebi meu site em <strong class="text-white">menos de 40 horas</strong>. Design profissional e já comecei a receber contatos pelo WhatsApp no mesmo dia. Recomendo demais!"</p>
+      <div class="flex items-center gap-4">
+       <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center font-bold text-white">
+        MA
+       </div>
+       <div>
+        <p class="font-semibold text-white">Marcos Almeida</p>
+        <p class="text-sm text-gray-400">Construtora Elite</p>
+       </div>
+      </div>
+     </div><!-- Testimonial 2 -->
+     <div class="gradient-border p-6 lg:p-8 card-hover reveal">
+      <div class="flex items-center gap-1 mb-4">
+       <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg>
+       <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg>
+       <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg>
+       <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg>
+       <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg>
+      </div>
+      <p class="text-gray-300 mb-6 leading-relaxed">"Profissionalismo do início ao fim. O site ficou <strong class="text-white">muito melhor do que eu esperava</strong> e o suporte foi excepcional. Meus pacientes adoraram!"</p>
+      <div class="flex items-center gap-4">
+       <div class="w-12 h-12 bg-gradient-to-br from-rose-400 to-pink-500 rounded-full flex items-center justify-center font-bold text-white">
+        CS
+       </div>
+       <div>
+        <p class="font-semibold text-white">Carla Santos</p>
+        <p class="text-sm text-gray-400">Clínica Bella Estética</p>
+       </div>
+      </div>
+     </div><!-- Testimonial 3 -->
+     <div class="gradient-border p-6 lg:p-8 card-hover reveal">
+      <div class="flex items-center gap-1 mb-4">
+       <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg>
+       <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg>
+       <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg>
+       <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg>
+       <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg>
+      </div>
+      <p class="text-gray-300 mb-6 leading-relaxed">"Cumpriram exatamente o que prometeram. <strong class="text-white">48 horas e meu site estava no ar</strong>. Atendimento rápido e resultado impecável."</p>
+      <div class="flex items-center gap-4">
+       <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center font-bold text-white">
+        RM
+       </div>
+       <div>
+        <p class="font-semibold text-white">Dr. Ricardo Mendes</p>
+        <p class="text-sm text-gray-400">Advogado</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Guarantee Section -->
+  <section class="py-20 md:py-32 relative">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="gradient-border p-8 md:p-12 lg:p-16 reveal">
+     <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+       <span class="inline-block gradient-text font-semibold text-sm uppercase tracking-wider mb-4">Nossa Garantia</span>
+       <h2 class="font-display text-3xl sm:text-4xl font-bold mb-6">Compromisso total com o <span class="gradient-text">seu resultado</span></h2>
+       <p class="text-gray-400 text-lg mb-8">Trabalhamos com total transparência e focamos 100% na sua satisfação. Sua confiança é nosso maior ativo.</p>
+       <div class="space-y-6">
+        <div class="flex items-start gap-4">
+         <div class="w-10 h-10 gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+         </div>
+         <div>
+          <h4 class="font-semibold text-white mb-1">Prazo Garantido</h4>
+          <p class="text-gray-400 text-sm">Se não entregarmos em 48h, você não paga. Simples assim.</p>
+         </div>
+        </div>
+        <div class="flex items-start gap-4">
+         <div class="w-10 h-10 gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          </svg>
+         </div>
+         <div>
+          <h4 class="font-semibold text-white mb-1">Revisões Inclusas</h4>
+          <p class="text-gray-400 text-sm">Ajustes e pequenas alterações sem custo adicional até a aprovação final.</p>
+         </div>
+        </div>
+        <div class="flex items-start gap-4">
+         <div class="w-10 h-10 gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+         </div>
+         <div>
+          <h4 class="font-semibold text-white mb-1">Total Transparência</h4>
+          <p class="text-gray-400 text-sm">Você acompanha cada etapa do desenvolvimento. Sem surpresas.</p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="flex justify-center">
+       <div class="relative">
+        <div class="w-64 h-64 gradient-primary rounded-full flex items-center justify-center glow-primary">
+         <div class="text-center">
+          <div class="text-6xl font-display font-bold text-white">
+           48h
+          </div>
+          <div class="text-white/80 font-medium mt-2">
+           Garantia de Entrega
+          </div>
+         </div>
+        </div>
+        <div class="absolute -top-4 -right-4 w-16 h-16 bg-green-500/20 border border-green-500/30 rounded-full flex items-center justify-center animate-pulse">
+         <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+         </svg>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- FAQ Section -->
+  <section id="faq" class="py-20 md:py-32 relative bg-gradient-to-b from-transparent via-indigo-500/5 to-transparent">
+   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal">
+     <span class="inline-block gradient-text font-semibold text-sm uppercase tracking-wider mb-4">FAQ</span>
+     <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Perguntas <span class="gradient-text">frequentes</span></h2>
+     <p class="text-gray-400 text-lg">Tire suas dúvidas antes de começar.</p>
+    </div>
+    <div class="space-y-4 reveal">
+     <!-- FAQ 1 -->
+     <div class="faq-item gradient-border cursor-pointer" onclick="toggleFaq(this)">
+      <div class="p-6 flex items-center justify-between">
+       <h3 class="font-semibold text-white pr-4">Preciso pagar antes de começar?</h3><span class="faq-icon w-8 h-8 gradient-primary rounded-full flex items-center justify-center flex-shrink-0 transition-transform duration-300">
+        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+        </svg></span>
+      </div>
+      <div class="faq-answer px-6">
+       <p class="text-gray-400 pb-6">Sim, trabalhamos com uma entrada inicial de 50% para começar o desenvolvimento. Os outros 50% são pagos apenas após sua aprovação final. Assim você tem segurança total.</p>
+      </div>
+     </div><!-- FAQ 2 -->
+     <div class="faq-item gradient-border cursor-pointer" onclick="toggleFaq(this)">
+      <div class="p-6 flex items-center justify-between">
+       <h3 class="font-semibold text-white pr-4">Posso pedir alterações no site?</h3><span class="faq-icon w-8 h-8 gradient-primary rounded-full flex items-center justify-center flex-shrink-0 transition-transform duration-300">
+        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+        </svg></span>
+      </div>
+      <div class="faq-answer px-6">
+       <p class="text-gray-400 pb-6">Sim! Incluímos até 2 rodadas de ajustes sem custo adicional. Queremos que o site fique exatamente como você precisa antes da entrega final.</p>
+      </div>
+     </div><!-- FAQ 3 -->
+     <div class="faq-item gradient-border cursor-pointer" onclick="toggleFaq(this)">
+      <div class="p-6 flex items-center justify-between">
+       <h3 class="font-semibold text-white pr-4">O site é meu? Fico com o código?</h3><span class="faq-icon w-8 h-8 gradient-primary rounded-full flex items-center justify-center flex-shrink-0 transition-transform duration-300">
+        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+        </svg></span>
+      </div>
+      <div class="faq-answer px-6">
+       <p class="text-gray-400 pb-6">Sim, 100%! Após a entrega, todo o código fonte é seu. Você pode hospedar onde quiser e fazer alterações futuras como preferir.</p>
+      </div>
+     </div><!-- FAQ 4 -->
+     <div class="faq-item gradient-border cursor-pointer" onclick="toggleFaq(this)">
+      <div class="p-6 flex items-center justify-between">
+       <h3 class="font-semibold text-white pr-4">A hospedagem está inclusa?</h3><span class="faq-icon w-8 h-8 gradient-primary rounded-full flex items-center justify-center flex-shrink-0 transition-transform duration-300">
+        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+        </svg></span>
+      </div>
+      <div class="faq-answer px-6">
+       <p class="text-gray-400 pb-6">O desenvolvimento do site está incluído no valor. A hospedagem e domínio são à parte, mas podemos te indicar as melhores opções com preços acessíveis e ajudar na configuração.</p>
+      </div>
+     </div><!-- FAQ 5 -->
+     <div class="faq-item gradient-border cursor-pointer" onclick="toggleFaq(this)">
+      <div class="p-6 flex items-center justify-between">
+       <h3 class="font-semibold text-white pr-4">E se eu não gostar do resultado?</h3><span class="faq-icon w-8 h-8 gradient-primary rounded-full flex items-center justify-center flex-shrink-0 transition-transform duration-300">
+        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+        </svg></span>
+      </div>
+      <div class="faq-answer px-6">
+       <p class="text-gray-400 pb-6">Trabalhamos até você aprovar. Se após as revisões ainda não estiver satisfeito, devolvemos seu dinheiro. Queremos clientes felizes, não insatisfeitos.</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Final CTA Section -->
+  <section class="py-20 md:py-32 relative overflow-hidden">
+   <div class="absolute inset-0 gradient-primary opacity-10"></div>
+   <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-500/30 rounded-full blur-[128px]"></div>
+   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center reveal">
+     <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Pronto para ter seu site <span class="gradient-text">profissional?</span></h2>
+     <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto">Não perca mais tempo. Enquanto você espera, seus concorrentes estão fechando negócios. Fale conosco agora e tenha seu site em até 48 horas.</p>
+     <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <button id="final-cta-primary" class="gradient-primary text-white font-semibold px-10 py-5 rounded-full text-lg btn-primary inline-flex items-center justify-center gap-3 animate-pulse-glow">
+       <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+       </svg><span>Quero meu site agora</span> </button>
+     </div>
+     <p class="text-gray-500 text-sm mt-6">Resposta em até 5 minutos durante horário comercial</p>
+    </div>
+   </div>
+  </section><!-- Footer -->
+  <footer class="py-12 border-t border-white/5">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+     <div class="flex items-center gap-2"><img src="https://i.ibb.co/s9YNzYkg/Logo.png" alt="Vertex Logo" class="w-24 h-24 object-contain">
+     </div>
+     <p class="text-gray-500 text-sm">© 2024 Vertex. Todos os direitos reservados.</p>
+     <div class="flex items-center gap-6">
+      <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Termos de Uso</a> <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Privacidade</a>
+     </div>
+    </div>
+   </div>
+  </footer><!-- WhatsApp Floating Button --> <button id="whatsapp-float" class="whatsapp-float" aria-label="Fale conosco no WhatsApp">
+   <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+   </svg></button>
+  <script>
+    // Default configuration
+    const defaultConfig = {
+      hero_headline: 'Seu site profissional pronto em até <span class="gradient-text glow-text">48 horas.</span>',
+      hero_subheadline: 'Design premium, velocidade de entrega e foco total em resultado. Transformamos sua ideia em um site de alta conversão, sem enrolação.',
+      cta_primary: 'Quero meu site em 48h',
+      cta_secondary: 'Ver Portfólio',
+      contact_link: 'https://wa.me/5511991271581',
+      background_color: '#0a0a0b',
+      surface_color: '#141416',
+      text_color: '#f5f5f7',
+      primary_color: '#6366f1',
+      secondary_color: '#818cf8'
+    };
+
+    // Handle WhatsApp/Contact link clicks
+    function handleContactClick(e) {
+      e.preventDefault();
+      const contactLink = window.elementSdk?.config?.contact_link || defaultConfig.contact_link;
+      window.open(contactLink, '_blank', 'noopener,noreferrer');
+    }
+
+    // Initialize Element SDK
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange: async (config) => {
+          // Update hero headline
+          const heroHeadline = document.getElementById('hero-headline');
+          if (heroHeadline) {
+            heroHeadline.innerHTML = config.hero_headline || defaultConfig.hero_headline;
+          }
+          
+          // Update hero subheadline
+          const heroSubheadline = document.getElementById('hero-subheadline');
+          if (heroSubheadline) {
+            heroSubheadline.textContent = config.hero_subheadline || defaultConfig.hero_subheadline;
+          }
+          
+          // Update CTA primary text
+          const heroCTAText = document.getElementById('hero-cta-text');
+          if (heroCTAText) {
+            heroCTAText.textContent = config.cta_primary || defaultConfig.cta_primary;
+          }
+          
+          // Update CTA secondary text
+          const heroSecondaryText = document.getElementById('hero-secondary-text');
+          if (heroSecondaryText) {
+            heroSecondaryText.textContent = config.cta_secondary || defaultConfig.cta_secondary;
+          }
+          
+          // Update colors
+          const root = document.documentElement;
+          root.style.setProperty('--color-bg', config.background_color || defaultConfig.background_color);
+          root.style.setProperty('--color-surface', config.surface_color || defaultConfig.surface_color);
+          root.style.setProperty('--color-text', config.text_color || defaultConfig.text_color);
+          root.style.setProperty('--color-primary', config.primary_color || defaultConfig.primary_color);
+          root.style.setProperty('--color-secondary', config.secondary_color || defaultConfig.secondary_color);
+        },
+        mapToCapabilities: (config) => ({
+          recolorables: [
+            {
+              get: () => config.background_color || defaultConfig.background_color,
+              set: (value) => {
+                config.background_color = value;
+                window.elementSdk.setConfig({ background_color: value });
+              }
+            },
+            {
+              get: () => config.surface_color || defaultConfig.surface_color,
+              set: (value) => {
+                config.surface_color = value;
+                window.elementSdk.setConfig({ surface_color: value });
+              }
+            },
+            {
+              get: () => config.text_color || defaultConfig.text_color,
+              set: (value) => {
+                config.text_color = value;
+                window.elementSdk.setConfig({ text_color: value });
+              }
+            },
+            {
+              get: () => config.primary_color || defaultConfig.primary_color,
+              set: (value) => {
+                config.primary_color = value;
+                window.elementSdk.setConfig({ primary_color: value });
+              }
+            },
+            {
+              get: () => config.secondary_color || defaultConfig.secondary_color,
+              set: (value) => {
+                config.secondary_color = value;
+                window.elementSdk.setConfig({ secondary_color: value });
+              }
+            }
+          ],
+          borderables: [],
+          fontEditable: undefined,
+          fontSizeable: undefined
+        }),
+        mapToEditPanelValues: (config) => {
+          return new Map([
+            ['hero_headline', config.hero_headline || defaultConfig.hero_headline],
+            ['hero_subheadline', config.hero_subheadline || defaultConfig.hero_subheadline],
+            ['cta_primary', config.cta_primary || defaultConfig.cta_primary],
+            ['cta_secondary', config.cta_secondary || defaultConfig.cta_secondary],
+            ['contact_link', config.contact_link || defaultConfig.contact_link]
+          ]);
         }
+      });
+    }
 
-        body {
-            /* Imagem de Fundo conforme solicitado */
-            background-image: linear-gradient(to bottom, var(--dark-overlay), var(--dark-overlay)), url('https://i.ibb.co/bMdSC63J/Fundo.png');
-            background-size: cover;
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-color: #000;
-            
-            color: white;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            overflow-x: hidden;
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      
+      // Close menu when clicking a link
+      mobileMenu.querySelectorAll('a, button').forEach(element => {
+        element.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+
+    // Add click handlers to all contact buttons
+    const contactButtons = ['nav-cta', 'mobile-cta', 'hero-cta-primary', 'final-cta-primary', 'whatsapp-float'];
+    contactButtons.forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn) {
+        btn.addEventListener('click', handleContactClick);
+      }
+    });
+
+    // FAQ toggle function
+    function toggleFaq(element) {
+      // Close all other FAQs
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== element) {
+          item.classList.remove('active');
         }
+      });
+      // Toggle current FAQ
+      element.classList.toggle('active');
+    }
 
-        /* --- HEADER --- */
-        header { margin-top: 30px; z-index: 10; }
-        .logo-text { font-weight: bold; font-size: 26px; color: white; margin-bottom: 25px; letter-spacing: -1px; }
-        .logo-text span { color: var(--primary-red); }
-        .badge-total { 
-            background: var(--primary-red); 
-            padding: 6px 15px; 
-            border-radius: 20px; 
-            font-size: 11px; 
-            font-weight: bold;
-            margin-bottom: 40px; 
-            display: inline-block;
-            text-transform: uppercase;
-        }
-
-        /* --- TEXTOS --- */
-        h1 { font-size: 1.7rem; margin: 10px 15px; line-height: 1.1; text-transform: uppercase; font-weight: 900; }
-        h1 span { color: var(--primary-red); }
-
-        .price-label { font-size: 1.1rem; margin-top: 20px; opacity: 0.9; }
-        .price-tag { color: #25C000; font-size: 2.8rem; font-weight: bold; margin: 5px 0; }
-        .sub-text { font-size: 1.7rem; margin-bottom: 0px;  margin-top: 35px; font-weight: bold; }
-
-        /* --- BOTÕES CTA --- */
-        .btn-cta {
-            background: linear-gradient(to bottom, #ff0000, #990000);
-            color: white;
-            border: none;
-            padding: 18px 20px;
-            border-radius: 10px;
-            font-weight: bold;
-            font-size: 16px;
-            cursor: pointer;
-            width: 85%;
-            max-width: 380px;
-            margin: 25px 0;
-            text-transform: uppercase;
-            box-shadow: 0 5px 20px rgba(255, 0, 0, 0.4);
-            transition: transform 0.2s;
-        }
-        .btn-cta:active { transform: scale(0.98); }
-
-        /* --- SLIDER 1 (CANAIS) --- */
-        #unique-slider { width: 100%; overflow: hidden; margin: 25px 0; }
-        .slider-container-ch { display: flex; overflow: hidden; width: 100%; }
-        .track-ch { display: flex; animation: scroll-ch 30s linear infinite; }
-        @keyframes scroll-ch { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-        .slide-ch { min-width: 80px; margin: 0 4px; }
-        .slide-ch img { width: 75px; height: 75px; border-radius: 22%; object-fit: cover; border: 1px solid rgba(255,255,255,0.1); }
-
-        /* --- SLIDER 2 (FILMES) --- */
-        .slider-movies { width: 100%; overflow: hidden; margin: 15px 0; }
-        .row-movies { display: flex; width: 100%; overflow: hidden; margin-bottom: 8px; }
-        .track-mv-rev { display: flex; animation: scroll-rev 40s linear infinite; }
-        .track-mv-fwd { display: flex; animation: scroll-fwd 40s linear infinite; }
-        @keyframes scroll-rev { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }
-        @keyframes scroll-fwd { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-        .slide-mv { min-width: 110px; margin: 0 3px; }
-        .slide-mv img { width: 108px; height: 155px; border-radius: 6px; object-fit: cover; }
-
-        /* LOGOS STREAMING */
-        .streaming-row { display: flex; justify-content: center; gap: 25px; margin: 15px 0; opacity: 0.7; }
-        .streaming-row img { height: 33px; filter: brightness(1.2); }
-
-        /* --- FAQ SECTION --- */
-        .faq-container { width: 90%; max-width: 450px; margin: 30px 0; text-align: left; }
-        .faq-header-title { text-align: center; font-size: 2.2rem; position: relative; margin-bottom: 40px; font-weight: 400; }
-        .faq-header-title span { opacity: 0.15; font-weight: 600;font-size: 7rem; position: absolute; top: -25px; left: 50%; transform: translateX(-50%); width: 100%; z-index: -1; color: var(--primary-red)}
+    // Scroll reveal animation
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll('.reveal');
+      
+      reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const revealPoint = 150;
         
-        details { background: rgba(30, 5, 5, 0.8); margin-bottom: 12px; border-radius: 6px; border: 1px solid var(--primary-red); backdrop-filter: blur(5px); }
-        summary { padding: 18px; cursor: pointer; font-weight: bold; display: flex; justify-content: space-between; align-items: center; list-style: none; font-size: 13px; text-transform: uppercase; color: #eee; }
-        summary::after { content: '\f078'; font-family: 'Font Awesome 5 Free'; font-weight: 900; font-size: 12px; transition: 0.3s; color: #ffff; }
-        details[open] summary::after { transform: rotate(180deg); }
-        .faq-ans { padding: 0 18px 18px; font-size: 14px; color: #bbb; line-height: 1.5; }
-
-        /* FOOTER */
-        .sup-24h { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 30px 0 10px; font-weight: bold; font-size: 18px; }
-        footer { margin: 30px 0; font-size: 12px; color: rgba(255,255,255,0.4); line-height: 1.6; }
-    </style>
-</head>
-<body>
-
-    <header>
-        <div class="logo-text">
-    <img src="https://i.ibb.co/6J4fY6KW/Logo-Site.png" alt="Cinalux" style="max-width: 300px; height: auto;">
-        </div>
-
-        <div class="badge-total">Mais de 50 mil clientes ativos</div>
-    </header>
-
-    <h1>OBTENHA ACESSO ILIMITADO Á <span>CANAIS ABERTOS E FECHADOS</span></h1>
-
-    <div class="price-label">Por apenas</div>
-    <div class="price-tag">R$29,90/mês</div>
-    <div class="sub-text">Mais de 2.000 Canais</div>
-
-    <div id="unique-slider">
-        <div class="slider-container-ch">
-            <div class="track-ch">
-                <div class="slide-ch"><img src="https://i.ibb.co/4dHgpXr/1.png"></div>
-                <div class="slide-ch"><img src="https://i.ibb.co/YyKgS1V/2.png"></div>
-                <div class="slide-ch"><img src="https://i.ibb.co/WcygtDr/3.png"></div>
-                <div class="slide-ch"><img src="https://i.ibb.co/zVFbkLn/4.png"></div>
-                <div class="slide-ch"><img src="https://i.ibb.co/r3yN3TF/5.png"></div>
-                <div class="slide-ch"><img src="https://i.ibb.co/Fq0ZxfK/6.png"></div>
-                <div class="slide-ch"><img src="https://i.ibb.co/kBw3QLp/7.png"></div>
-                <div class="slide-ch"><img src="https://i.ibb.co/4dHgpXr/1.png"></div>
-                <div class="slide-ch"><img src="https://i.ibb.co/YyKgS1V/2.png"></div>
-                <div class="slide-ch"><img src="https://i.ibb.co/WcygtDr/3.png"></div>
-                <div class="slide-ch"><img src="https://i.ibb.co/zVFbkLn/4.png"></div>
-                <div class="slide-ch"><img src="https://i.ibb.co/r3yN3TF/5.png"></div>
-                <div class="slide-ch"><img src="https://i.ibb.co/Fq0ZxfK/6.png"></div>
-                <div class="slide-ch"><img src="https://i.ibb.co/kBw3QLp/7.png"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="sub-text" style="padding: 0 25px; margin: 5px; font-size: 1.4rem;">Mais de 100.000 Conteúdos das mais populares plataformas</div>
-
-    <div class="slider-movies">
-        <div class="row-movies">
-            <div class="track-mv-rev">
-                <div class="slide-mv"><img src="https://i.ibb.co/wgSLcQm/01.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/Bs7CbmS/02.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/JQzvWMh/03.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/KDJ04MT/04.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/tYCCcph/05.webp"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/wgSLcQm/01.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/Bs7CbmS/02.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/JQzvWMh/03.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/KDJ04MT/04.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/tYCCcph/05.webp"></div>
-            </div>
-        </div>
-        <div class="row-movies">
-            <div class="track-mv-fwd">
-                <div class="slide-mv"><img src="https://i.ibb.co/dQVqR3h/01.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/7dvRZsVJ/rebel-ridge.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/PDv3kt4/03.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/TBJQPgM/04.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/s350q8f/05.webp"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/dQVqR3h/01.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/7dvRZsVJ/rebel-ridge.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/PDv3kt4/03.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/TBJQPgM/04.jpg"></div>
-                <div class="slide-mv"><img src="https://i.ibb.co/s350q8f/05.webp"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="streaming-row">
-        <img src="https://i.ibb.co/0yFKkb56/Logos.png">
-    </div>
-
-<button class="btn-cta" onclick="window.open('https://wa.me/5511990203834?text=Olá!%20Gostaria%20de%20realizar%20um%20teste','_blank')">
-  Teste agora gratuitamente
-</button>
-
-
-    <div class="faq-container">
-        <div class="faq-header-title"><span>FAQ</span>Perguntas<br>Frequentes</div>
-        
-        <details>
-            <summary>Precisa de internet para funcionar?</summary>
-            <div class="faq-ans">Sim, o app requer conexão com a internet para operar. No entanto, graças ao sinal potencializado do nosso satélite próprio, uma conexão básica é suficiente para transmitir vídeos em 4K sem interrupções.<br><br>Muitos de nossos clientes utilizam o app com a internet 4G do celular e relatam uma experiência fluida, sem travamentos.</div>
-        </details>
-
-        <details>
-            <summary>É necessário um especialista para configurar?</summary>
-            <div class="faq-ans">Não! Nosso sistema foi desenvolvido para ser extremamente simples de instalar. Fornecemos um passo a passo detalhado para que você possa acompanhar facilmente e configurar tudo por conta própria.
-
-</div>
-        </details>
-
-        <details>
-            <summary>O pagamento é mensal?</summary>
-            <div class="faq-ans">Nós trabalhamos com 4 planos:<br><br>Mensal – R$29,90<br>Trimestral – R$79,90<br>Semestral – R$154,90<br>Anual – R$249,90</div>
-        </details>
-
-        <details>
-            <summary>Moro em zona rural, funciona pra mim?</summary>
-            <div class="faq-ans">Sim! Mesmo em locais com conexão limitada. Graças ao sinal potencializado do nosso satélite próprio, uma internet básica é suficiente para uma experiência fluida.</div>
-        </details>
-
-        <details>
-            <summary>Quantos canais são liberados?</summary>
-            <div class="faq-ans">Você vai ter acesso a mais de 2 mil canais abertos e fechados, Netflix, Amazon Prime, Disney+, Max, Globoplay, e muito mais!</div>
-        </details>
-
-        <details>
-            <summary>Como vou receber?</summary>
-            <div class="faq-ans">Imediatamente! Ao entrar em contato conosco, você terá um período de teste de 3 horas. Além disso, oferecemos suporte pelo WhatsApp com um passo a passo detalhado para ajudar na configuração.</div>
-        </details>
-
-        <details>
-            <summary>Em quantos aparelhos posso usar?</summary>
-            <div class="faq-ans">Nossos planos tem capacidade para 2 telas simultâneas, você pode usar na TV, Notebook e até no Celular.</div>
-        </details>
-    </div>
-
-<button class="btn-cta" onclick="window.open('https://wa.me/5511990203834?text=Olá!%20Gostaria%20de%20realizar%20um%20teste','_blank')">
-  Teste agora gratuitamente
-</button>
-
-    <div class="sup-24h">
-        <i class="fab fa-whatsapp" style="color: #25d366; font-size: 24px;"></i>
-        Suporte 24h
-    </div>
-
-    <footer>
-        Cinalux © 2026. Todos os direitos reservados.<br>
-        Termos de Uso | Políticas de Privacidade
-    </footer>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp Pop-up com Balão de Fala</title>
-    <style>
-        /* Inicialmente, o botão está oculto */
-        .popup {
-            display: none;
-            position: fixed;
-            bottom: 15px;
-            right: 20px;
-            z-index: 5000;
+        if (elementTop < windowHeight - revealPoint) {
+          element.classList.add('active');
         }
+      });
+    }
 
-        /* Animação de pulsação */
-        @keyframes pulse {
-            0% {
-                transform: scale(0.8);
-                opacity: 0;
-            }
-            50% {
-                transform: scale(1.1);
-                opacity: 1;
-            }
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
+    // Trigger animations on load and scroll
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#') {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
         }
-
-        /* Classe para adicionar a animação */
-        .pulse-animation {
-            animation: pulse 0.5s ease-in-out;
-        }
-
-        /* Balão de fala */
-        .balloon {
-            position: absolute;
-            bottom: 10px; /* Centraliza com o ícone */
-            right: 100%; /* Posiciona à esquerda do ícone */
-            margin-right: 10px; /* Espaço entre o balão e o ícone */
-            background: #f0f0f0;
-            color: #333;
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-            font-size: 14px;
-            font-family: Arial, sans-serif;
-            line-height: 1.4;
-            white-space: nowrap;
-            opacity: 1;
-            transition: opacity 0.5s ease; /* Suaviza o desaparecimento */
-        }
-
-        /* Triângulo do balão */
-        .balloon::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 100%;
-            transform: translateY(-50%);
-            border-width: 8px;
-            border-style: solid;
-            border-color: transparent transparent transparent #f0f0f0;
-        }
-
-        /* Ocultar o balão */
-        .hide-balloon {
-            opacity: 0;
-            pointer-events: none; /* Garante que o balão não seja clicável */
-        }
-    </style>
-    <script>
-        // Exibir o pop-up e o balão com animação após 5 segundos
-        window.onload = function () {
-            setTimeout(() => {
-                const popup = document.getElementById('whatsapp-popup');
-                const balloon = document.getElementById('popup-balloon');
-
-                // Exibe o botão com animação de pulsação
-                popup.style.display = 'block';
-                popup.classList.add('pulse-animation');
-
-                // Remove a animação após sua execução
-                setTimeout(() => {
-                    popup.classList.remove('pulse-animation');
-                }, 1500); // Duração da animação
-
-                // Exibe o balão de fala
-                balloon.style.display = 'block';
-
-                // Oculta o balão após 5 segundos
-                setTimeout(() => {
-                    balloon.classList.add('hide-balloon');
-                }, 5000); // 5000ms = 5 segundos
-            }, 5000); // 5000ms = 5 segundos para exibir o pop-up
-        };
-    </script>
-</head>
-<body>
-    <!-- Botão de WhatsApp -->
-    <div id="whatsapp-popup" class="popup">
-        <!-- Balão de Fala -->
-        <div id="popup-balloon" class="balloon">
-            Qualquer dúvida estamos por aqui!
-        </div>
-        <!-- Ícone do WhatsApp -->
-        <a href="https://wa.me/5511990203834"
-            target="_blank">
-            <img width="50" src="https://i.ibb.co/ZXw4vhk/Whatsapp.png" alt="WhatsApp Chat Icon" />
-        </a>
-    </div>
-</body>
+      });
+    });
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d729421962df1ef',t:'MTc3MjY0NTExMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
